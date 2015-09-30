@@ -1,13 +1,13 @@
 RewriteEngine on
 
 # BASE_URL: CHANGE THIS LINE TO MATCH BASE_URL FOR ENVIRONMENT IN env.ini
-RewriteBase /untitled/public/
+RewriteBase /clickbunker/public/
 
 # SET RULES FOR ASSETS
 RewriteRule ^css/([\w\.\-\_\/]+).css$ css/main.php?asset=$1 [QSA,L]
 RewriteRule ^js/([\w\.\-\_\/]+).js$ js/main.php?asset=$1 [QSA,L]
-RewriteRule ^img/([\w\.\-\_\/]+)$ /untitled/app/assets/images/$1 [QSA,L]
-RewriteRule ^fonts/([\w\.\-\_\/]+)$ /untitled/app/assets/fonts/$1 [QSA,L]
+RewriteRule ^img/([\w\.\-\_\/]+)$ /clickbunker/app/assets/images/$1 [QSA,L]
+RewriteRule ^fonts/([\w\.\-\_\/]+)$ /clickbunker/app/assets/fonts/$1 [QSA,L]
 
 # DEFAULT RULES
 RewriteCond %{REQUEST_FILENAME} !-f
