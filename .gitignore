@@ -1,6 +1,6 @@
 # Config Files
 /config/env.ini
-/config/env_production.ini
+/config/env*.ini
 
 .htaccess*
 
