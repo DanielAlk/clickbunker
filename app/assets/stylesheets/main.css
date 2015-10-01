@@ -1,0 +1,16 @@
+body { padding-bottom: 1000px; }
+header { position: fixed; top: 0; height: 90px; background-color: #FFF; width: 100%;z-index: 999;}
+.bunker-layer-0 { background: url('/clickbunker/img/main-plx-0.jpg') no-repeat; background-size: cover; }
+.bunker-layer-1>img { width: 615px;height: auto;bottom: 115px; }
+.bunker-layer-2>img { width: 350px;height: auto;top: 50px;right: 100px; }
+.bunker-layer-3>img { width: 86%;height: auto;bottom: 345px;margin: 0 auto;left: 7%; }
+.bunker-layer-4>img { width: 100%;bottom: 35px; }
+.bunker-layer-5>img { bottom: 5px;width: 95%;left: 2.5%;height: auto; }
+.bunker-layer-6>img { width: 100%;height: auto;bottom: 6px; }
+.bunker-layer-7>img { width: 100%;height: auto;bottom: 0; }
+.bunker-layer-8>img { width: 100%;height: auto;bottom: 75px; }
+.bunker-layer-9>img { top: -160px;left:0; width: 100%;}
+.bunker-layer-10>img { width: 100%;height: auto;bottom: -100px;left:0; }
+.parallax-bunker { position: relative; height: 900px; top: 90px; overflow: hidden;}
+.parallax-bunker>div { position: absolute; height: 100%; width: 100%; }
+.parallax-bunker>div>img { position: absolute; }

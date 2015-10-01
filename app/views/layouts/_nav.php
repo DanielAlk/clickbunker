@@ -1,2 +1,1 @@
-<header class="container">
-</header>
+<header></header>
