@@ -1,7 +1,7 @@
 body { padding-bottom: 1000px; padding-top: 90px; }
 header { position: fixed; top: 0; height: 90px; background-color: #FFF; width: 100%;z-index: 999;}
-.parallax-bunker { position: relative; overflow: hidden; height: 700px; }
-.bunker-container { position: absolute; height: 100%; width: 2178px; left: 50%; margin-left: -1089px; }
+.parallax-bunker { position: relative; overflow: hidden; height: 750px; }
+.bunker-container { position: absolute; height: 100%; width: 2334px; left: 50%; margin-left: -1167px; }
 .bunker { position: relative; width: 100%; height: 100%; }
 .bunker>div { position: absolute; height: 100%; width: 100%; top: 0; left: 0; background-repeat: no-repeat; background-size: 100%; }
 .bunker-layer-0 { background-image: url('<?php $asset->path('bunker-plx-0.png') ?>'); }
