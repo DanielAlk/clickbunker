@@ -1,0 +1,13 @@
+.parallax-bunker { height: 750px; overflow: hidden; }
+.bunker { position: relative; width: 100%; height: 100%; }
+.bunker>div {
+	position: absolute; height: 100%; width: 100%; top: 0; left: 0;
+	background-repeat: no-repeat; background-size: cover; background-position: center;
+}
+.bunker-layer-0 { background-image: url('<?php $asset->path('bunker-plx-0.png') ?>'); }
+.bunker-layer-1 { background-image: url('<?php $asset->path('bunker-plx-1.png') ?>'); }
+.bunker-layer-2 { background-image: url('<?php $asset->path('bunker-plx-2.png') ?>'); }
+.bunker-layer-3 { background-image: url('<?php $asset->path('bunker-plx-3.png') ?>'); }
+.bunker-layer-4 { background-image: url('<?php $asset->path('bunker-plx-4.png') ?>'); }
+.bunker-layer-5 { background-image: url('<?php $asset->path('bunker-plx-5.png') ?>'); }
+.bunker-layer-6 { background-image: url('<?php $asset->path('bunker-plx-6.png') ?>'); }

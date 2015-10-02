@@ -6,5 +6,6 @@ include 'TweenMax.min.js'; echo "\r\n";
 include 'ScrollMagic.min.js'; echo "\r\n";
 include 'animation.gsap.min.js'; echo "\r\n";
 include 'bootstrap.min.js'; echo "\r\n";
+include 'bunker.js'; echo "\r\n";
 include 'main.js'; echo "\r\n";
 ?>
