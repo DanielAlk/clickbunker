@@ -1,16 +1,13 @@
-body { padding-bottom: 1000px; }
+body { padding-bottom: 1000px; padding-top: 90px; }
 header { position: fixed; top: 0; height: 90px; background-color: #FFF; width: 100%;z-index: 999;}
-.bunker-layer-0 { background: url('/clickbunker/img/main-plx-0.jpg') no-repeat; background-size: cover; }
-.bunker-layer-1>img { width: 615px;height: auto;bottom: 115px; }
-.bunker-layer-2>img { width: 350px;height: auto;top: 50px;right: 100px; }
-.bunker-layer-3>img { width: 86%;height: auto;bottom: 345px;margin: 0 auto;left: 7%; }
-.bunker-layer-4>img { width: 100%;bottom: 35px; }
-.bunker-layer-5>img { bottom: 5px;width: 95%;left: 2.5%;height: auto; }
-.bunker-layer-6>img { width: 100%;height: auto;bottom: 6px; }
-.bunker-layer-7>img { width: 100%;height: auto;bottom: 0; }
-.bunker-layer-8>img { width: 100%;height: auto;bottom: 75px; }
-.bunker-layer-9>img { top: -160px;left:0; width: 100%;}
-.bunker-layer-10>img { width: 100%;height: auto;bottom: -100px;left:0; }
-.bunker { position: relative; padding-bottom: 70%; top: 90px; overflow: hidden;}
-.bunker>div { position: absolute; height: 100%; width: 100%; top: 0; left: 0; }
-.bunker>div>img { position: absolute; }
+.parallax-bunker { position: relative; overflow: hidden; height: 700px; }
+.bunker-container { position: absolute; height: 100%; width: 2178px; left: 50%; margin-left: -1089px; }
+.bunker { position: relative; width: 100%; height: 100%; }
+.bunker>div { position: absolute; height: 100%; width: 100%; top: 0; left: 0; background-repeat: no-repeat; background-size: 100%; }
+.bunker-layer-0 { background-image: url('<?php $asset->path('bunker-plx-0.png') ?>'); }
+.bunker-layer-1 { background-image: url('<?php $asset->path('bunker-plx-1.png') ?>'); }
+.bunker-layer-2 { background-image: url('<?php $asset->path('bunker-plx-2.png') ?>'); }
+.bunker-layer-3 { background-image: url('<?php $asset->path('bunker-plx-3.png') ?>'); }
+.bunker-layer-4 { background-image: url('<?php $asset->path('bunker-plx-4.png') ?>'); }
+.bunker-layer-5 { background-image: url('<?php $asset->path('bunker-plx-5.png') ?>'); }
+.bunker-layer-6 { background-image: url('<?php $asset->path('bunker-plx-6.png') ?>'); }
