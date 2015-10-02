@@ -11,6 +11,6 @@ header { position: fixed; top: 0; height: 90px; background-color: #FFF; width: 1
 .bunker-layer-8>img { width: 100%;height: auto;bottom: 75px; }
 .bunker-layer-9>img { top: -160px;left:0; width: 100%;}
 .bunker-layer-10>img { width: 100%;height: auto;bottom: -100px;left:0; }
-.parallax-bunker { position: relative; height: 900px; top: 90px; overflow: hidden;}
-.parallax-bunker>div { position: absolute; height: 100%; width: 100%; }
-.parallax-bunker>div>img { position: absolute; }
+.bunker { position: relative; padding-bottom: 70%; top: 90px; overflow: hidden;}
+.bunker>div { position: absolute; height: 100%; width: 100%; top: 0; left: 0; }
+.bunker>div>img { position: absolute; }
