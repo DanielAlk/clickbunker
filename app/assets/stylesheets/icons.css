@@ -1,0 +1,13 @@
+.icon { display: inline-block; font-style: normal; background-repeat: no-repeat; background-size: auto 100%; }
+.icon.icon-primary-89 { height: 89px; width: 89px; background-image: url('<?php $asset->path('icons-primary-89x89.png') ?>'); }
+.icon.icon-primary-89.icon-magnet { background-position: 0 0; }
+.icon.icon-primary-89.icon-circular-arrows { background-position: -89px 0; }
+.icon.icon-primary-89.icon-checked { background-position: -178px 0; }
+.icon.icon-primary-89.icon-heart { background-position: -267px 0; }
+
+.icon.icon-social-28 { height: 28px; width: 28px; background-image: url('<?php $asset->path('icons-social-28x28.png') ?>'); }
+.icon.icon-social-28:hover, .icon.icon-social-28:focus { background-image: url('<?php $asset->path('icons-social-28x28-hover.png') ?>'); }
+.icon.icon-social-28.icon-facebook { background-position: 0 0; }
+.icon.icon-social-28.icon-twitter { background-position: -28px 0; }
+.icon.icon-social-28.icon-google { background-position: -56px 0; }
+.icon.icon-social-28.icon-instagram { background-position: -84px 0; }

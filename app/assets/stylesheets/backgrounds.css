@@ -1,0 +1,28 @@
+.bg-silver { background-color: #738694; color: #FFF; }
+.bg-space { background-color: #2e373f; color: #FFF; }
+
+/* background-images */
+.notebook-and-coffee { background-image: url('<?php $asset->path('notebook-and-coffee.png') ?>');
+	background-position: right center; background-repeat: no-repeat;
+}
+.notebook-and-social { background-image: url('<?php $asset->path('notebook-and-social.png') ?>');
+	background-position: right center; background-repeat: no-repeat;
+}
+.earth { background-image: url('<?php $asset->path('earth.png') ?>');
+	background-position: left center; background-repeat: no-repeat;
+}
+.notebook-with-graphics { background-image: url('<?php $asset->path('notebook-with-graphics.png') ?>');
+	background-position: right center; background-repeat: no-repeat;
+}
+.tablet-and-mobile { background-image: url('<?php $asset->path('tablet-and-mobile.png') ?>');
+	background-position: left center; background-repeat: no-repeat;
+}
+.notebook-and-camera { background-image: url('<?php $asset->path('notebook-and-camera.png') ?>');
+	background-position: right center; background-repeat: no-repeat;
+}
+.pc-with-code { background-image: url('<?php $asset->path('pc-with-code.png') ?>');
+	background-position: left center; background-repeat: no-repeat;
+}
+.tablets-with-graphics { background-image: url('<?php $asset->path('tablets-with-graphics.png') ?>');
+	background-position: right center; background-repeat: no-repeat;
+}

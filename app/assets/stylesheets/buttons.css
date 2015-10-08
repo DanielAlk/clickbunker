@@ -1,0 +1,11 @@
+.btn {  font-weight: 300;font-size: 17px;padding: 5px 13px;border: 0; text-transform: uppercase;}
+.btn:focus, .btn:active:focus, .btn.active:focus { outline: thin dotted; }
+.btn-primary {  background-color: #fdc725;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary { 
+	color: #fff; background-color: #D0A31E;
+}
+
+.navbar-toggle .icon-bar { background-color: #5C5C5C; }
+.navbar-toggle .text { display: block; position: absolute; top: 0; left: 100%; height: 100%; line-height: 100%; margin-left: 10px; }
+.navbar-toggle:hover, .navbar-toggle:focus, .navbar-toggle:active { color: #fdc725; }
+.navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar, .navbar-toggle:active .icon-bar { background-color: #fdc725; }
