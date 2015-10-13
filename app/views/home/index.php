@@ -29,7 +29,7 @@
 	</div>
 </section>
 <section class="bg-silver">
-	<div class="container inspace-NS-150 notebook-and-coffee">
+	<div class="container inspace-NS-150 notebook-and-coffee section-background">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">
 				<h2>Estrategias de Marketing enfocadas a su negocio</h2>
@@ -39,7 +39,7 @@
 	</div>
 </section>
 <section class="" id="content">
-	<div class="container inspace-NS-150 notebook-and-social">
+	<div class="container inspace-NS-150 notebook-and-social section-background">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">
 				<h2>Creación de Contenido</h2>
@@ -49,7 +49,7 @@
 	</div>
 </section>
 <section class="bg-space" id="social">
-	<div class="container inspace-NS-150 earth">
+	<div class="container inspace-NS-150 earth section-background">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-6 organize-y-60">
 				<h2>Email y Social Media Marketing</h2>
@@ -59,7 +59,7 @@
 	</div>
 </section>
 <section class="bg-silver" id="seo">
-	<div class="container inspace-NS-150 notebook-with-graphics">
+	<div class="container inspace-NS-150 notebook-with-graphics section-background">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">
 				<h2>Optimización SEO</h2>
@@ -69,7 +69,7 @@
 	</div>
 </section>
 <section class="" id="leads">
-	<div class="container inspace-NS-150 tablet-and-mobile">
+	<div class="container inspace-NS-150 tablet-and-mobile section-background">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-6 organize-y-60">
 				<h2>Generación automática y segmentada de Leads</h2>
@@ -79,7 +79,7 @@
 	</div>
 </section>
 <section class="bg-silver" id="graphics">
-	<div class="container inspace-NS-150 notebook-and-camera">
+	<div class="container inspace-NS-150 notebook-and-camera section-background">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">
 				<h2>Diseño Gráfico de calidad</h2>
@@ -89,7 +89,7 @@
 	</div>
 </section>
 <section class="" id="web">
-	<div class="container inspace-NS-150 pc-with-code">
+	<div class="container inspace-NS-150 pc-with-code section-background">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-6 organize-y-60">
 				<h2>Desarrollo de sitios web e integraciones</h2>
@@ -99,7 +99,7 @@
 	</div>
 </section>
 <section class="bg-silver" id="roi">
-	<div class="container inspace-NS-150 tablets-with-graphics">
+	<div class="container inspace-NS-150 tablets-with-graphics section-background">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">
 				<h2>Análisis y reporte de tu ROI</h2>
