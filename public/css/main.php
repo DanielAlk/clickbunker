@@ -23,7 +23,7 @@ if ($minify_active && !file_exists($requested_asset.'.css')) {
 	include 'Exception.php';
 	$minifier = new Minify\CSS(ob_get_contents());
 	ob_end_clean();
-	file_put_contents($requested_asset.'.css', $minifier->minify());
+	$minifier->minify($requested_asset.'.css');
 	include __DIR__.'/'.$requested_asset.'.css';
 }
 else if ($minify_active) {

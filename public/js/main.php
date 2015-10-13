@@ -20,7 +20,7 @@ if ($minify_active && !file_exists($requested_asset.'.js')) {
 	include 'Exception.php';
 	$minifier = new Minify\JS(ob_get_contents());
 	ob_end_clean();
-	file_put_contents($requested_asset.'.js', $minifier->minify());
+	$minifier->minify($requested_asset.'.js');
 	include __DIR__.'/'.$requested_asset.'.js';
 }
 else if ($minify_active) {
