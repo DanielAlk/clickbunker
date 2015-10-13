@@ -14,6 +14,5 @@
 			</div>
 		</div>
 		<div class="bunker-layer-6"></div>
-		<div class="bunker-layer-7"></div>
 	</div>
 </div>
