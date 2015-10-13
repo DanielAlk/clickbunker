@@ -1,6 +1,6 @@
 <?php include 'home/_bunker.php'; ?>
-<section class="text-center">
-	<div class="container inspace-S-100 organize-y-30">
+<section class="text-center" id="inbound">
+	<div class="container inspace-N-60 inspace-S-100 organize-y-30">
 		<h2>En Clickbunker Respiramos Inbound</h2>
 		<p class="max-x-900 center-block">Cuando se trata de atraer, convertir, cerrar y mantener clientes, no hay nada que esté fuera del alcance de nuestras capacidades. En Clickbunker encontrarás un enfoque holístico de la gestión de Inbound Marketing.</p>
 		<div class="row">
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 </section>
-<section class="">
+<section class="" id="content">
 	<div class="container inspace-NS-150 notebook-and-social">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">
@@ -48,7 +48,7 @@
 		</div>
 	</div>
 </section>
-<section class="bg-space">
+<section class="bg-space" id="social">
 	<div class="container inspace-NS-150 earth">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-6 organize-y-60">
@@ -58,7 +58,7 @@
 		</div>
 	</div>
 </section>
-<section class="bg-silver">
+<section class="bg-silver" id="seo">
 	<div class="container inspace-NS-150 notebook-with-graphics">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">
@@ -68,7 +68,7 @@
 		</div>
 	</div>
 </section>
-<section class="">
+<section class="" id="leads">
 	<div class="container inspace-NS-150 tablet-and-mobile">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-6 organize-y-60">
@@ -78,7 +78,7 @@
 		</div>
 	</div>
 </section>
-<section class="bg-silver">
+<section class="bg-silver" id="graphics">
 	<div class="container inspace-NS-150 notebook-and-camera">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">
@@ -88,7 +88,7 @@
 		</div>
 	</div>
 </section>
-<section class="">
+<section class="" id="web">
 	<div class="container inspace-NS-150 pc-with-code">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-6 organize-y-60">
@@ -98,7 +98,7 @@
 		</div>
 	</div>
 </section>
-<section class="bg-silver">
+<section class="bg-silver" id="roi">
 	<div class="container inspace-NS-150 tablets-with-graphics">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 organize-y-60">

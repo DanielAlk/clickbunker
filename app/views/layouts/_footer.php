@@ -26,7 +26,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-6 text-right organize-y-30">
+			<div class="col-xs-12 col-md-6 text-right organize-y-30">
 				<h4 class="uppercase">Acerca de nosotros</h4>
 				<p>Dar likes, hacer un Follow, dejar un comentario, realizar una búsqueda, escuchar música, compraro simplemente leer. En digital todo nace de un click. Siempre que hay un link, puede haber un click. Por eso, desde hace más de 10 añosnos dedicamos a trabajar junto a las marcas para que ese "click" se produzca a su favor. Somos interactivos, tecnológicos, profesionales y por sobre todo, curiosos y apasionados. Cuando se trata de atraer, convertir, cerrar y mantener clientes, no hay nada que esté fuera del alcance de nuestras capacidades. En Clickbunker encontrarás un enfoque holístico de la gestión de Inbound Marketing.</p>
 				<ul class="list-inline organize-x-10 space-N-80">

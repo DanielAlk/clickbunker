@@ -26,3 +26,15 @@
 .tablets-with-graphics { background-image: url('<?php $asset->path('tablets-with-graphics.png') ?>');
 	background-position: right center; background-repeat: no-repeat;
 }
+@media(max-width: 991px) {
+	.notebook-and-coffee, .notebook-and-social, .earth, .notebook-with-graphics,
+	.tablet-and-mobile, .notebook-and-camera, .pc-with-code, .tablets-with-graphics { 
+		background-size: 50%;
+	}
+}
+@media(max-width: 767px) {
+	.notebook-and-coffee, .notebook-and-social, .earth, .notebook-with-graphics,
+	.tablet-and-mobile, .notebook-and-camera, .pc-with-code, .tablets-with-graphics { 
+		background-image: none;
+	}
+}

@@ -15,7 +15,6 @@ BunkerAnimation.setScene = function() {
 		TweenMax.to("#parallaxBunker .bunker-layer-3", 1, {top: calculateTop(0.64), ease: Linear.easeNone}),
 		TweenMax.to("#parallaxBunker .bunker-layer-4", 1, {top: calculateTop(0.5), ease: Linear.easeNone}),
 		TweenMax.to("#parallaxBunker .bunker-layer-5", 1, {top: calculateTop(0.43), ease: Linear.easeNone}),
-		TweenMax.to("#parallaxBunker .bunker-layer-6", 1, {top: calculateTop(0), ease: Linear.easeNone})
 	]);
 	BunkerAnimation.scene = new ScrollMagic.Scene({duration: BunkerAnimation.duration})
 	.setTween(tween)

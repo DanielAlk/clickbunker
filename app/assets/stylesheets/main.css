@@ -27,15 +27,20 @@ img.round { border-radius: 50%; border: 4px solid; }
 .left { left: 0; }
 
 .inspace-N-0 { padding-top: 0; }
+.inspace-N-30 { padding-top: 30px; }
+.inspace-N-60 { padding-top: 60px; }
 .inspace-N-80 { padding-top: 80px; }
 .inspace-S-100 { padding-bottom: 100px; }
 .inspace-S-120 { padding-bottom: 120px; }
 .inspace-S-150 { padding-bottom: 150px; }
 .inspace-NS-50 { padding-top: 50px; padding-bottom: 50px; }
 .inspace-NS-80 { padding-top: 80px; padding-bottom: 80px; }
+.inspace-NS-100 { padding-top: 100px; padding-bottom: 100px; }
 .inspace-NS-150 { padding-top: 150px; padding-bottom: 150px; }
 
 .space-N-10 { margin-top: 10px; }
+.space-N-30 { margin-top: 30px !important; }
+.space-N-40 { margin-top: 40px !important; }
 .space-N-80 { margin-top: 80px !important; }
 .space-N-s10 { margin-top: -10px; }
 .space-S-15 { margin-bottom: 15px; }

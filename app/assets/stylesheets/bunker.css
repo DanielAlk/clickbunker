@@ -11,6 +11,7 @@
 .bunker-layer-4 { background-image: url('<?php $asset->path('bunker-plx-4.png') ?>'); }
 .bunker-layer-5 { background-image: url('<?php $asset->path('bunker-plx-5.png') ?>'); }
 .bunker-layer-6 { background-image: url('<?php $asset->path('bunker-plx-6.png') ?>'); }
+.bunker-layer-7 { background-image: url('<?php $asset->path('bunker-plx-7.png') ?>'); }
 
 .bunker .container { position: relative; color: #FFF; text-align: center; z-index: 1; }
 .bunker .container h1 { margin-top: 160px; }

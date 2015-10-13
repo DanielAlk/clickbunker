@@ -6,7 +6,9 @@ class application_helper {
 	
 	public function __construct() {
 	
-		function some_function() {
+		function logo_class() {
+			global $params;
+			if ($params['controller'] == 'home' and $params['action'] == 'index') echo 'scroll-to';
 		}
 	
 	}
