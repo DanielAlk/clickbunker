@@ -9,7 +9,7 @@ class Asset {
 		foreach ($settings as $ext => $dirs) {
 			$keys = array_keys($dirs);
 			$real = get_include_path().'assets/'.$keys[0].'/';
-			$rewriten = $base_url.$dirs[array_keys($dirs)[0]].'/';
+			$rewriten = $base_url.$dirs[$keys[0]].'/';
 			if(!strpos($ext, ',')) $assets[$ext] = array($real, $rewriten);
 			else {
 				$exts = explode(',', $ext);
