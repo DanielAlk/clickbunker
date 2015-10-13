@@ -4,11 +4,11 @@ class Asset {
 		global $base_url;
 		$assets = array();
 		$settings = parse_ini_file(__DIR__.'/../config/assets.ini', true);
-		var_dump($settings); die();
 		$this->force_types = $settings['force_types'];
 		unset($settings['force_types']);
 		foreach ($settings as $ext => $dirs) {
-			$real = get_include_path().'assets/'.array_keys($dirs)[0].'/';
+			$keys = array_keys($dirs);
+			$real = get_include_path().'assets/'.$keys[0].'/';
 			$rewriten = $base_url.$dirs[array_keys($dirs)[0]].'/';
 			if(!strpos($ext, ',')) $assets[$ext] = array($real, $rewriten);
 			else {
