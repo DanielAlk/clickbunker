@@ -6,13 +6,13 @@
 					<div class="col-xs-12 col-sm-6 organize-y-30">
 						<h4 class="uppercase">Navegación</h4>
 						<ul class="list-unstyled organize-y-10">
-							<li><a href="#">Creación de contenido</a></li>
-							<li><a href="#">Email y Social Media Marketing</a></li>
-							<li><a href="#">Optimización SEO</a></li>
-							<li><a href="#">Generación automática y segmentada de Leads</a></li>
-							<li><a href="#">Diseño gráfico de calidad</a></li>
-							<li><a href="#">Desarrollo de sitios web e integraciones</a></li>
-							<li><a href="#">Análisis y reporte de tu ROI</a></li>
+							<li><a class="scroll-to" href="#content">Creación de contenido</a></li>
+							<li><a class="scroll-to" href="#social">Email y Social Media Marketing</a></li>
+							<li><a class="scroll-to" href="#seo">Optimización SEO</a></li>
+							<li><a class="scroll-to" href="#leads">Generación automática y segmentada de Leads</a></li>
+							<li><a class="scroll-to" href="#graphics">Diseño gráfico de calidad</a></li>
+							<li><a class="scroll-to" href="#web">Desarrollo de sitios web e integraciones</a></li>
+							<li><a class="scroll-to" href="#roi">Análisis y reporte de tu ROI</a></li>
 							<li>Blog: <a target="_blank" href="http://www.clickbunker.com/blog/"><b><i>http://www.clickbunker.com/blog/</i></b></a></li>
 						</ul>
 					</div>

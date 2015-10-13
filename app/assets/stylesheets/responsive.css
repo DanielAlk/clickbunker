@@ -1,0 +1,5 @@
+@media(max-width: 767px) {
+	section>div.inspace-NS-150 { padding-top: 60px; padding-bottom: 60px; }
+	section>div.inspace-NS-150 .organize-y-60>:not(:last-child) { margin-bottom: 30px; }
+	section>div.inspace-NS-150 .organize-y-60>:not(:first-child) { margin-top: 30px; }
+}

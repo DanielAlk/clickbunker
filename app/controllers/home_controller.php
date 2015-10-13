@@ -4,7 +4,7 @@ class home_controller extends ApplicationController {
 		array(array('index'), 'detect_mobile')
 		);
 
-	protected function index($data) {
+	protected function index() {
 	}
 
 }

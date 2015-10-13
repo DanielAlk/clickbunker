@@ -1,3 +1,13 @@
+<?php
+$extra_js =<<< EXTRA_JS
+$(function() {
+	BunkerAnimation.setScene();
+	navigation.init();
+	scrollTo();
+});
+EXTRA_JS
+?>
+
 <?php include 'home/_bunker.php'; ?>
 <section class="text-center" id="inbound">
 	<div class="container inspace-N-60 inspace-S-100 organize-y-30">
@@ -115,36 +125,39 @@
 	</div>
 </section>
 <section class="bg-silver">
-	<div class="container text-center organize-y-30 inspace-N-80 inspace-S-120">
+	<div class="container text-center organize-y-30 inspace-N-80 inspace-S-90">
 		<h2><big>Equipo</big></h2>
-		<div class="row-with cols-7">
-			<div class="organize-y-15">
-				<img class="block fill-x round" alt="" src="<?php $asset->path('fernando-cuscuela.png') ?>">
-				<h5 class="nowrap"><b>Fernando Cuscuela</b><br><small>CEO</small></h5>
-			</div>
-			<div class="organize-y-15">
-				<img class="block fill-x round" alt="" src="<?php $asset->path('sebastian-bosco.png') ?>">
-				<h5 class="nowrap"><b>Sebastián Bosco</b><br><small>Sales Director</small></h5>
-			</div>
-			<div class="organize-y-15">
-				<img class="block fill-x round" alt="" src="<?php $asset->path('valeria-rojo.png') ?>">
-				<h5 class="nowrap"><b>Valeria Rojo</b><br><small>Account Director</small></h5>
-			</div>
-			<div class="organize-y-15">
-				<img class="block fill-x round" alt="" src="<?php $asset->path('barbara-schtirbu.png') ?>">
-				<h5 class="nowrap"><b>Bárbara Schtirbu</b><br><small>Creative Director</small></h5>
-			</div>
-			<div class="organize-y-15">
-				<img class="block fill-x round" alt="" src="<?php $asset->path('mariela-tsusumi.png') ?>">
-				<h5 class="nowrap"><b>Mariela Tsusumi</b><br><small>Design Manager</small></h5>
-			</div>
-			<div class="organize-y-15">
-				<img class="block fill-x round" alt="" src="<?php $asset->path('maria-brisceno.png') ?>">
-				<h5 class="nowrap"><b>Maria A. Brisceño</b><br><small>Social Media Manager</small></h5>
-			</div>
-			<div class="organize-y-15">
-				<img class="block fill-x round" alt="" src="<?php $asset->path('fernando-cuscuela.png') ?>">
-				<h5 class="nowrap"><b>TBD</b><br><small>SEO & Advertising Manager</small></h5>
+		<div class="max-x-400-xs space-EW-auto inspace-10">
+			<div class="row-with cols-xs-2 cols-sm-4 cols-md-7">
+				<div class="organize-y-15 inspace-S-30">
+					<img class="block fill-x round" alt="" src="<?php $asset->path('fernando-cuscuela.png') ?>">
+					<h5 class="nowrap"><b>Fernando Cuscuela</b><br><small>CEO</small></h5>
+				</div>
+				<div class="organize-y-15 inspace-S-30">
+					<img class="block fill-x round" alt="" src="<?php $asset->path('sebastian-bosco.png') ?>">
+					<h5 class="nowrap"><b>Sebastián Bosco</b><br><small>Sales Director</small></h5>
+				</div>
+				<div class="organize-y-15 inspace-S-30">
+					<img class="block fill-x round" alt="" src="<?php $asset->path('valeria-rojo.png') ?>">
+					<h5 class="nowrap"><b>Valeria Rojo</b><br><small>Account Director</small></h5>
+				</div>
+				<div class="organize-y-15 inspace-S-30">
+					<img class="block fill-x round" alt="" src="<?php $asset->path('barbara-schtirbu.png') ?>">
+					<h5 class="nowrap"><b>Bárbara Schtirbu</b><br><small>Creative Director</small></h5>
+				</div>
+				<div class="hidden visible-sm" style="width: 12.5%; height:1px;"></div>
+				<div class="organize-y-15 inspace-S-30">
+					<img class="block fill-x round" alt="" src="<?php $asset->path('mariela-tsusumi.png') ?>">
+					<h5 class="nowrap"><b>Mariela Tsusumi</b><br><small>Design Manager</small></h5>
+				</div>
+				<div class="organize-y-15 inspace-S-30">
+					<img class="block fill-x round" alt="" src="<?php $asset->path('maria-brisceno.png') ?>">
+					<h5 class="nowrap"><b>Maria A. Brisceño</b><br><small>Social Media Manager</small></h5>
+				</div>
+				<div class="organize-y-15 inspace-S-30">
+					<img class="block fill-x round" alt="" src="<?php $asset->path('fernando-cuscuela.png') ?>">
+					<h5 class="nowrap"><b>TBD</b><br><small>SEO & Advertising Manager</small></h5>
+				</div>
 			</div>
 		</div>
 	</div>

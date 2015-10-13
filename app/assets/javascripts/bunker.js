@@ -4,11 +4,13 @@ BunkerAnimation.calculateTop = function(val) {
 	return BunkerAnimation.duration * val;
 };
 BunkerAnimation.setScene = function() {
+	if (!$('#parallaxBunker').length) return;
 	BunkerAnimation.duration = $('#parallaxBunker').outerHeight();
 	var controller = BunkerAnimation.controller;
 	var calculateTop = BunkerAnimation.calculateTop;
 	var tween = new TimelineMax ()
 	.add([
+		//TweenMax.to("#parallaxBunker .bunker-layer-0", 1, {top: calculateTop(1.01), ease: Linear.easeNone}),
 		TweenMax.to("#parallaxBunker .bunker-layer-0", 1, {top: calculateTop(0.68), ease: Linear.easeNone}),
 		TweenMax.to("#parallaxBunker .bunker-layer-1", 1, {top: calculateTop(0.93), ease: Linear.easeNone}),
 		TweenMax.to("#parallaxBunker .bunker-layer-2", 1, {top: calculateTop(0.715), ease: Linear.easeNone}),

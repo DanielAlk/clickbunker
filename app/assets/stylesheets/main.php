@@ -8,4 +8,5 @@ include 'icons.css'; echo "\r\n";
 include 'header.css'; echo "\r\n";
 include 'footer.css'; echo "\r\n";
 include 'bunker.css'; echo "\r\n";
+include 'responsive.css'; echo "\r\n";
 ?>

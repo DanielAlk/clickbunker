@@ -1,23 +1,29 @@
-$(function() { 
-	BunkerAnimation.setScene();
-	navigation.init();
-	scrollTo();
-});
-
 var navigation = {};
 
 navigation.init = function() {
-	var $nav = $('#navigation');
+	var $container = $('#navigation');
+	var $nav = $container.find('nav');
 	var activate = function(element) { $nav.add(element).addClass('active'); };
 	var deactivate = function(element) { $nav.add(element).removeClass('active'); };
-	var switchOn = function(element) { $nav.show('slide', { direction: 'left' }, function() { activate(element) }); };
-	var switchOff = function(element) { $nav.hide('slide', { direction: 'left' }, function() { deactivate(element) }); };
+	var switchOn = function(element) { 
+		$container.fadeIn();
+		$nav.show('slide', { direction: 'left' }, function() {
+			activate(element)
+		});
+	};
+	var switchOff = function(element) {
+		$container.fadeOut();
+		$nav.hide('slide', { direction: 'left' }, function() {
+			deactivate(element)
+		});
+	};
 	var toggle = function(e) {
 		var element = this;
 		if ($nav.hasClass('active')) switchOff(element);
 		else switchOn(element);
 	};
-	$(document).on('click', 'body>:not(header)', function(e) {
+	$(document).on('click', '#navigation', function(e) {
+		if ($(e.target).parents('nav').length || $(e.target).is('nav')) return;
 		if ($nav.hasClass('active')) switchOff($('.menu-toggle'));
 	});
 	$('.menu-toggle').click(toggle);
