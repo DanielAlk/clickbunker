@@ -10,8 +10,8 @@ BunkerAnimation.setScene = function() {
 	var calculateTop = BunkerAnimation.calculateTop;
 	var tween = new TimelineMax ()
 	.add([
-		//TweenMax.to("#parallaxBunker .bunker-layer-0", 1, {top: calculateTop(1.01), ease: Linear.easeNone}),
-		TweenMax.to("#parallaxBunker .bunker-layer-0", 1, {top: calculateTop(0.68), ease: Linear.easeNone}),
+		TweenMax.to("#parallaxBunker .bunker-layer-0", 1, {top: calculateTop(1.01), ease: Linear.easeNone}),
+		//TweenMax.to("#parallaxBunker .bunker-layer-0", 1, {top: calculateTop(0.68), ease: Linear.easeNone}),
 		TweenMax.to("#parallaxBunker .bunker-layer-1", 1, {top: calculateTop(0.93), ease: Linear.easeNone}),
 		TweenMax.to("#parallaxBunker .bunker-layer-2", 1, {top: calculateTop(0.715), ease: Linear.easeNone}),
 		TweenMax.to("#parallaxBunker .bunker-layer-3", 1, {top: calculateTop(0.64), ease: Linear.easeNone}),
