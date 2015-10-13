@@ -4,6 +4,7 @@ class Asset {
 		global $base_url;
 		$assets = array();
 		$settings = parse_ini_file(__DIR__.'/../config/assets.ini', true);
+		var_dump($settings); die();
 		$this->force_types = $settings['force_types'];
 		unset($settings['force_types']);
 		foreach ($settings as $ext => $dirs) {
