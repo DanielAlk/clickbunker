@@ -102,7 +102,7 @@ var permanentArrow = function() {
 			});
 		};
 		$body.stop(true, true);
-		$body.animate({ scrollTop: top }, scroll == 0 ? 1200 : 600);
+		$body.animate({ scrollTop: top }, scroll < tops[0] ? 1200 : 600);
 		if (top == tops[tops.length-1]) $arrow.parent().addClass('inverted');
 	};
 	$arrow.click(handler);
