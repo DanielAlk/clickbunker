@@ -11,4 +11,8 @@
 .navbar-toggle:hover .icon-bar, .navbar-toggle:active .icon-bar, .navbar-toggle.active .icon-bar { background-color: #fdc725; }
 
 .permanent-arrow { position: fixed; bottom: 0; width: 100%; text-align: center; padding-bottom: 20px; z-index: 98; }
+.permanent-arrow img { width: auto; height: 20px; }
 .permanent-arrow.inverted img { -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+@media(max-width: 767px) {
+	.permanent-arrow img { height: 15px; }
+}
