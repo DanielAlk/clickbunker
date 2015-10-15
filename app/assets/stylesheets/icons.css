@@ -11,3 +11,7 @@
 .icon.icon-social-28.icon-twitter { background-position: -28px 0; }
 .icon.icon-social-28.icon-google { background-position: -56px 0; }
 .icon.icon-social-28.icon-instagram { background-position: -84px 0; }
+
+@media(max-width: 767px) {
+	img.clickbunker { height: 30px; width: auto; }
+}

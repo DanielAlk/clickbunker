@@ -13,7 +13,7 @@
       </button>
 		</div>
 		<div class="pull-right">
-			<a href="#contact" class="btn btn-primary">Contacto</a>
+			<a href="#contactModal" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contacto</a>
 		</div>
 	</div>
 </header>
@@ -21,12 +21,13 @@
 	<div class="relative">
 		<nav class="absolute">
 			<div class="navigation">
-				<?php render('layouts/_nav_links.php', array('class' => 'organize-y-15')); ?>
+				<?php render('shared/_nav_links.php', array('class' => 'organize-y-15')); ?>
 				<div class="visible-xs inspace-N-20">
-					<a href="#contact" class="btn btn-primary" style="color:#FFF; font-size:15px;">Contacto</a>
+					<a href="#contactModal" class="btn btn-primary" data-toggle="modal" data-target="#contactModal" style="color:#FFF; font-size:15px;">Contacto</a>
 				</div>
-				<?php render('layouts/_social_links.php', array('class' => 'organize-x-10 space-N-30')); ?>
+				<?php render('shared/_social_links.php', array('class' => 'organize-x-10 space-N-30')); ?>
 			</div>
 		</nav>
 	</div>
 </div>
+<?php include 'shared/_contact_modal.php'; ?>

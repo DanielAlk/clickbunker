@@ -1,0 +1,7 @@
+.modal button.close { position: relative; margin: 5px 10px; z-index: 1; }
+.modal-content { background-color: #ececec; }
+.modal-body { padding-left: 15px; padding-right: 15px; max-width: 600px; margin: 0 auto; }
+@media(min-width: 768px) {
+	.modal-dialog { width: auto; margin: 30px; }
+	.modal-body { padding-top: 150px; padding-bottom: 150px; }
+}

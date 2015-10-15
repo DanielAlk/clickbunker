@@ -5,6 +5,8 @@ include 'main.css'; echo "\r\n";
 include 'backgrounds.css'; echo "\r\n";
 include 'buttons.css'; echo "\r\n";
 include 'icons.css'; echo "\r\n";
+include 'forms.css'; echo "\r\n";
+include 'modals.css'; echo "\r\n";
 include 'header.css'; echo "\r\n";
 include 'footer.css'; echo "\r\n";
 include 'bunker.css'; echo "\r\n";

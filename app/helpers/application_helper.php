@@ -5,6 +5,8 @@
 class application_helper {
 	
 	public function __construct() {
+
+		$GLOBALS['extra_js'] = '';
 	
 		function logo_class() {
 			global $params;

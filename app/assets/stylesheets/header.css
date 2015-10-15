@@ -19,6 +19,5 @@ header a { color: inherit; }
 	.nav-container nav { max-width: none; max-height: 440px; overflow-y: scroll; }
 	header .pull-right { display: none; }
 	header .navbar-toggle .text { display: none; }
-	header img.clickbunker { height: 30px; width: auto; }
 	header .navbar-toggle { margin: 8px; }
 }

@@ -7,5 +7,5 @@
 	<li><a class="scroll-to" href="#graphics">Diseño gráfico de calidad</a></li>
 	<li><a class="scroll-to" href="#web">Desarrollo de sitios web e integraciones</a></li>
 	<li><a class="scroll-to" href="#roi">Análisis y reporte de tu ROI</a></li>
-	<li>Blog: <a target="_blank" href="http://www.clickbunker.com/blog/"><b><i>http://www.clickbunker.com/blog/</i></b></a></li>
+	<li><a target="_blank" href="http://www.clickbunker.com/blog/">Blog</a></li>
 </ul>

@@ -1,13 +1,13 @@
 <?php
-$extra_js =<<< EXTRA_JS
-$(function() {
-	BunkerAnimation.setScene();
-	navigation.init();
-	scrollTo();
-});
+$extra_js .=<<< EXTRA_JS
+BunkerAnimation.setScene();
+navigation.init();
+scrollTo();
+permanentArrow();
 EXTRA_JS
 ?>
 
+<div class="permanent-arrow"><a href="javascript:void(0);"><img src="<?php $asset->path('arrow-down-yellow.png'); ?>"></a></div>
 <?php include 'home/_bunker.php'; ?>
 <section class="text-center" id="inbound">
 	<div class="container inspace-N-60 inspace-S-100 organize-y-30">
@@ -103,7 +103,7 @@ EXTRA_JS
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-6 organize-y-60">
 				<h2>Desarrollo de sitios web e integraciones</h2>
-				<p>Apoyamos a nuestros clientes en todas sus necesidades, incluyendo la creación de un nuevo sitio web y/o mejoras en su sitio actual. Clickbunker desarrolla basándose en plataforma propietaria de <b>CMS</b> (<a href="#"><b><i>Thinkindot por Dos al Cubo</i></b></a>) o bien alternativas más básicas como <b>WordPress</b>. Todos nuestros desarrollos son responsive pensando siempre en mobile como plataforma vital para el crecimiento y evolución de nuestros clientes en el ámbito digital.</p>
+				<p>Apoyamos a nuestros clientes en todas sus necesidades, incluyendo la creación de un nuevo sitio web y/o mejoras en su sitio actual. Clickbunker desarrolla basándose en plataforma propietaria de <b>CMS</b> (<a target="_blank" href="http://www.dosalcubo.com/thinkindot.html"><b><i>Thinkindot por Dos al Cubo</i></b></a>) o bien alternativas más básicas como <b>WordPress</b>. Todos nuestros desarrollos son responsive pensando siempre en mobile como plataforma vital para el crecimiento y evolución de nuestros clientes en el ámbito digital.</p>
 			</div>
 		</div>
 	</div>
@@ -135,7 +135,7 @@ EXTRA_JS
 				</div>
 				<div class="organize-y-15 inspace-S-30">
 					<img class="block fill-x round" alt="" src="<?php $asset->path('sebastian-bosco.png') ?>">
-					<h5 class="nowrap"><b>Sebastián Bosco</b><br><small>Sales Director</small></h5>
+					<h5 class="nowrap"><b>Sebastián Bosco</b><br><small>Director</small></h5>
 				</div>
 				<div class="organize-y-15 inspace-S-30">
 					<img class="block fill-x round" alt="" src="<?php $asset->path('valeria-rojo.png') ?>">
@@ -147,16 +147,16 @@ EXTRA_JS
 				</div>
 				<div class="hidden visible-sm" style="width: 12.5%; height:1px;"></div>
 				<div class="organize-y-15 inspace-S-30">
-					<img class="block fill-x round" alt="" src="<?php $asset->path('mariela-tsusumi.png') ?>">
-					<h5 class="nowrap"><b>Mariela Tsusumi</b><br><small>Design Manager</small></h5>
+					<img class="block fill-x round" alt="" src="<?php $asset->path('fernando-handem.png') ?>">
+					<h5 class="nowrap"><b>Fernando Handem</b><br><small>Design Manager</small></h5>
 				</div>
 				<div class="organize-y-15 inspace-S-30">
 					<img class="block fill-x round" alt="" src="<?php $asset->path('maria-brisceno.png') ?>">
 					<h5 class="nowrap"><b>Maria A. Brisceño</b><br><small>Social Media Manager</small></h5>
 				</div>
 				<div class="organize-y-15 inspace-S-30">
-					<img class="block fill-x round" alt="" src="<?php $asset->path('fernando-cuscuela.png') ?>">
-					<h5 class="nowrap"><b>TBD</b><br><small>SEO & Advertising Manager</small></h5>
+					<img class="block fill-x round" alt="" src="<?php $asset->path('virginia-dendi.png') ?>">
+					<h5 class="nowrap"><b>Virginia Dendi</b><br><small>SEO & Advertising Manager</small></h5>
 				</div>
 			</div>
 		</div>
