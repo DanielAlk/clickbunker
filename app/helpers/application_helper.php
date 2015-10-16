@@ -12,6 +12,16 @@ class application_helper {
 			global $params;
 			if ($params['controller'] == 'home' and $params['action'] == 'index') echo 'scroll-to';
 		}
+
+		function dropdown($name, $id, $placeholder, $opts, $required = true) {
+			global $asset;
+			$options = array();
+			foreach ($opts as $key => $value) {
+				if (is_int($key)) $options[$value] = $value;
+				else $options[$key] = $value;
+			}
+			include 'shared/_dropdown.php';
+		}
 	
 	}
 	

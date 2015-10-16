@@ -23,17 +23,9 @@ EXTRA_JS
             <input class="form-control" type="tel" name="contact[tel]" id="contact_phone" placeholder="Teléfono de contacto" title="Ingresá un teléfono válido" required>
           </div>
           <div class="form-group">
-            <div class="dropdown-container">
-              <input type="hidden" name="contact[how]" id="contact_how">
-              <input type="text" class="form-control" placeholder="¿Cómo nos conoció?" title="Este campo es requerido" required>
-              <a href="#"><img src="<?php $asset->path('dropdown-caret.png') ?>"></a>
-              <ul class="list-unstyled">
-                <li><a href="#" data-value="Google">Google</a></li>
-                <li><a href="#" data-value="Redes Sociales">Redes Sociales</a></li>
-                <li><a href="#" data-value="Evento">Evento</a></li>
-                <li><a href="#" data-value="Recomendación">Recomendación</a></li>
-              </ul>
-            </div>
+            <?php dropdown('contact[how]', 'contact_how', '¿Cómo nos conoció?', array(
+              'Google', 'Redes Sociales', 'Evento', 'Recomendación'
+            )) ?>
           </div>
           <div class="form-group">
             <label class="sr-only" for="contact_message">Mensaje</label>

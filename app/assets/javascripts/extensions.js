@@ -10,21 +10,43 @@ Extensions.drop = function() {
 		var $drop = $(this);
 		var $hidden = $drop.children('[type=hidden]');
 		var $input = $drop.children('[type=text]');
-		var $trigger = $drop.children('a');
+		var $trigger = $drop.children('div.trigger');
 		var $list = $drop.children('ul');
 		var $options = $list.find('a');
+		var $form = $drop.parents('form');
+		var is_open = function() {
+			return $list.css('display') == 'block';
+		};
 		var documentClick = function(e) {
-			if (!$(e.target).is($trigger) && !$(e.target).is($trigger.children()) && !$(e.target).is($options)) close();
+			if (!$(e.target).is($trigger.add($trigger.children()).add($options).add($input))) close();
+		};
+		var documentKeyup = function(e) {
+			e.preventDefault();
+			var $active = $options.filter('.active, .selected');
+			var $next;
+			switch(e.which) {
+				case 40: $next = $active.length && !$active.is($options.last()) ? $active.parents('li').next().find('a') : $options.first(); break;
+				case 38: $next = $active.length && !$active.is($options.first()) ? $active.parents('li').prev().find('a') : $options.last(); break;
+				default: return;
+			};
+			$options.removeClass('active selected');
+			$next.addClass('active');
+		};
+		var inputKeydown = function(e) {
+			if (!is_open() && (e.which == 40 || e.which == 38)) open();
+			else if (e.which != 13) e.preventDefault();
 		};
 		var open = function() {
 			$drop.addClass('active');
 			$list.stop(true,true).fadeIn();
 			$(document).on('click', documentClick);
+			$(document).on('keyup', documentKeyup);
 		};
 		var close = function() {
 			$drop.removeClass('active');
 			$list.stop(true,true).fadeOut();
 			$(document).off('click', documentClick);
+			$(document).off('keyup', documentKeyup);
 		};
 		var toggle = function(e) {
 			e.preventDefault();
@@ -36,14 +58,23 @@ Extensions.drop = function() {
 			var $option = $(this);
 			var value = $option.data('value');
 			var text = $option.text();
-			$options.removeClass('active');
-			$option.addClass('active');
+			$options.removeClass('active selected');
+			$option.addClass('selected');
 			$input.val(text);
 			$hidden.val(value);
 			close();
 		};
-		$trigger.click(toggle);
+		var submit = function(e) {
+			if (!is_open()) return;
+			$options.filter('.active').click();
+			e.preventDefault();
+			e.stopPropagation();
+			e.stopImmediatePropagation();
+		};
+		$trigger.add($input).click(toggle);
 		$options.click(saveAndClose);
+		$input.keydown(inputKeydown);
+		$form.submit(submit);
 	});
 };
 
