@@ -2,14 +2,14 @@
 <html>
 <head>
 	<?php include 'layouts/_head.php'; ?>
-	<link href="<?php $asset->css(); ?>?1510160200" rel="stylesheet" type="text/css">
+	<link href="<?php $asset->css(); ?>?1510160658" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<?php include 'layouts/_nav.php'; ?>
 	<?php include $app->view; ?>
 	<?php include 'layouts/_footer.php'; ?>
-	<script src="<?php $asset->js(); ?>?1510160200" type="application/javascript"></script>
+	<script src="<?php $asset->js(); ?>?1510160658" type="application/javascript"></script>
 	<script>
 		$(function() {
 			<?php __('extra_js'); ?>
