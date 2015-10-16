@@ -8,7 +8,7 @@ EXTRA_JS
 ?>
 
 <?php include 'home/_bunker.php'; ?>
-<div class="permanent-arrow"><a href="javascript:void(0);"><img src="<?php $asset->path('arrow-down-yellow.png'); ?>"></a></div>
+<div class="permanent-arrow"><a><img src="<?php $asset->path('arrow-down-yellow.png'); ?>"></a></div>
 <section class="text-center" id="inbound">
 	<div class="container inspace-N-60 inspace-S-100 organize-y-30">
 		<h2>En Clickbunker Respiramos Inbound</h2>

@@ -1,10 +1,7 @@
 <?php
 $extra_js .=<<< EXTRA_JS
 $('.dropdown-container').drop();
-$('#contactForm').validate(function(e) {
-  e.preventDefault();
-  $('#contactModal').modal('hide');
-});
+contactForm();
 EXTRA_JS
 ?>
 <div class="modal fade" id="contactModal">
@@ -13,7 +10,7 @@ EXTRA_JS
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <div class="modal-body">
         <img class="clickbunker" alt="Clickbunker" src="<?php $asset->path('clickbunker-black.png'); ?>">
-        <form class="space-N-40" action="" method="POST" role="form" id="contactForm" novalidate>
+        <form class="space-N-40" action="<?php echo $path->mailer_contact(); ?>" method="POST" role="form" id="contactForm" novalidate>
           <div class="form-group">
             <label class="sr-only" for="contact_name">Nombre</label>
             <input class="form-control" type="text" name="contact[name]" id="contact_name" placeholder="Nombre" title="Este campo es requerido" required>

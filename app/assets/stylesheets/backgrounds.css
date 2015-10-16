@@ -41,6 +41,7 @@
 }
 @media(max-width: 767px) {
 	.section-background { 
-		background-image: none;
+		background-size: auto 170px;
+		background-position: center 30px;
 	}
 }

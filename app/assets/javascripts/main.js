@@ -77,6 +77,24 @@ var scrollTo = function() {
 	});
 };
 
+var contactForm = function() {
+	var output = function(html) {
+		$('#contactModal .modal-body p').remove();
+		$('<p>', { html: html })
+		.css('margin-top', 20)
+		.appendTo($('#contactModal .modal-body'));
+	};
+	$('#contactForm').validate(function(e) {
+	  e.preventDefault();
+	  var form = e.target;
+	  $(form).remove();
+	  output('Estamos procesando su solicitud...');
+	  $.post(form.action, $(form).serialize(), function(data) {
+	    if (data) output('Gracias por contactarte<br>Nos pondremos en contacto a la brevedad');
+	  }, 'json');
+	});
+};
+
 var permanentArrow = function() {
 	var $arrow = $('.permanent-arrow a');
 	var $body = $('body, html');
@@ -89,8 +107,10 @@ var permanentArrow = function() {
 		$sections.each(function() {
 			tops.push($(this).offset().top - headerHeight);
 		});
+		tops.push($body.height() - $(window).height());
 	};
 	var handler = function(e) {
+		e.preventDefault();
 		var top;
 		if ($arrow.parent().hasClass('inverted')) {
 			top = 0;
@@ -103,7 +123,7 @@ var permanentArrow = function() {
 		};
 		$body.stop(true, true);
 		$body.animate({ scrollTop: top }, scroll < tops[0] ? 1200 : 600);
-		if (top == tops[tops.length-1]) $arrow.parent().addClass('inverted');
+		if (top >= tops[tops.length-1]) $arrow.parent().addClass('inverted');
 	};
 	$arrow.click(handler);
 	$(window).load(setTops);
@@ -120,7 +140,7 @@ $(function() {
 			var $list = $drop.children('ul');
 			var $options = $list.find('a');
 			var documentClick = function(e) {
-				if (!$(e.target).is($trigger) && !$(e.target).is($options)) close();
+				if (!$(e.target).is($trigger) && !$(e.target).is($trigger.children()) && !$(e.target).is($options)) close();
 			};
 			var open = function() {
 				$drop.addClass('active');
