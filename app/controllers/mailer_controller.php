@@ -6,7 +6,7 @@ class mailer_controller extends ApplicationController {
 
 	protected function contact() {
 		if (!isset($_POST['contact'])) return $this->not_found();
-		global $mailer, $path;
+		global $mailer;
 		$GLOBALS['contact'] = $_POST['contact'];
 		$mailer->notify('Contacto Clickbunker');
 	}
