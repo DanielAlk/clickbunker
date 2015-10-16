@@ -6,6 +6,8 @@ class Path {
 	
 	public function __construct() {
 		$this->routes = $routes = parse_ini_file('../config/routes.ini');
+		$this->locale_settings = parse_ini_file('../config/app.ini', true);
+		$this->locale_settings = $this->locale_settings['locale'];
 		$path = $_GET['path'];
 		unset($_GET['path']);
 		$params = array();
@@ -107,11 +109,11 @@ class Path {
 			//CLEAN ROUTE IF DOUBLE BAR FOUND
 			$route = preg_replace('/\/\//', '/', $route);
 
-			global $base_url, $host, $app;
+			global $base_url, $host;
 
 			//SET LOCALE TO ROUTE IF LOCATE PARAM PRESENT OR IF SECOND ARGUMENT IS PRESENT TO FORCE A LOCALE
-			$locale_param = $app->settings['locale']['param'];
-			$locale_default = $app->settings['locale']['default'];
+			$locale_param = $this->locale_settings['param'];
+			$locale_default = $this->locale_settings['default'];
 			$route_locale = isset($args[1]) ? $args[1] : (isset($_GET[$locale_param]) ? $_GET[$locale_param] : false);
 			if ($route_locale and $route_locale != $locale_default) {
 				if (isset($route_has_query) && $route_has_query) $route.='&'.$locale_param.'='.$route_locale;
