@@ -1,3 +1,8 @@
+<?php
+$extra_js .=<<< EXTRA_JS
+Navigation.init();
+EXTRA_JS;
+?>
 <header>
 	<div class="relative">
 		<div class="absolute block top left text-center">

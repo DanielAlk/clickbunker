@@ -1,3 +1,8 @@
+<?php
+$extra_js .=<<< EXTRA_JS
+BunkerAnimation.setScene();
+EXTRA_JS;
+?>
 <?php if ($device != 'mobile'): ?>
 	<div class="parallax-bunker" id="parallaxBunker">
 		<div class="bunker">

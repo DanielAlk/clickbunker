@@ -1,7 +1,6 @@
 <?php
 $extra_js .=<<< EXTRA_JS
-$('.dropdown-container').drop();
-contactForm();
+Forms.contact();
 EXTRA_JS
 ?>
 <div class="modal fade" id="contactModal">
