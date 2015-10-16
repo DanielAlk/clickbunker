@@ -33,8 +33,12 @@ Extensions.drop = function() {
 			$next.addClass('active');
 		};
 		var inputKeydown = function(e) {
-			if (!is_open() && (e.which == 40 || e.which == 38)) open();
-			else if (e.which != 13) e.preventDefault();
+			switch(e.which) {
+				case 40: case 38: if (!is_open()) open(); break;
+				case 13: break;
+				case 9: if (is_open()) e.preventDefault(); break;
+				default: e.preventDefault();
+			};
 		};
 		var open = function() {
 			$drop.addClass('active');
